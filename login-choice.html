@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Account Type</title>
+
+    <link rel="stylesheet" href="choose-signup.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <h2>Result Portal</h2>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="learn.html">About</a></li>
+        <li><a href="login-choice.html">Login</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <h1>Welcome Back</h1>
+
+    <p>Select how you want to log in.</p>
+
+    <div class="cards">
+
+        <!-- Student Card -->
+        <div class="card">
+
+            <i class="fas fa-user-graduate"></i>
+
+            <h2>Student</h2>
+
+            <p>Sign into your Student Account</p>
+
+            <button id="studentLoginBtn">Student Login</button>
+
+        </div>
+
+
+        <!-- Administrator Card -->
+        <div class="card">
+
+            <i class="fas fa-user-shield"></i>
+
+            <h2>Administrator</h2>
+
+            <p>Sign into your Admin Account</p>
+
+            <button id="adminLoginBtn">Admin Login</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("studentLoginBtn").addEventListener("click", () => {
+    window.location.href = "login.html";
+});
+
+document.getElementById("adminLoginBtn").addEventListener("click", () => {
+    window.location.href = "admin-login.html";
+});
+
+</script>
+
+</body>
+</html>

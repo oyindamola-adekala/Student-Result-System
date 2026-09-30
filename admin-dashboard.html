@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARMS Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin-dashboard.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>ARMS</h2>
+
+    <a href="#"><i class="fas fa-home"></i> Dashboard</a>
+    <a href="#"><i class="fas fa-user-graduate"></i> Students</a>
+    <a href="#"><i class="fas fa-file-alt"></i> Results</a>
+    <a href="#"><i class="fas fa-book"></i> Courses</a>
+    <a href="#"><i class="fas fa-chart-line"></i> Analytics</a>
+    <a href="#"><i class="fas fa-cog"></i> Settings</a>
+
+    <button id="logoutBtn">Logout</button>
+
+</div>
+
+<div class="main-content">
+
+    <div class="topbar">
+
+        <h2>
+            Welcome,
+            <span id="adminName">Administrator</span> 👋
+        </h2>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Students</h3>
+            <h1>120</h1>
+        </div>
+
+        <div class="card">
+            <h3>Total Results</h3>
+            <h1>860</h1>
+        </div>
+
+        <div class="card">
+            <h3>Courses</h3>
+            <h1>35</h1>
+        </div>
+
+        <div class="card">
+            <h3>Pending Uploads</h3>
+            <h1>7</h1>
+        </div>
+
+    </div>
+
+    <div class="activity">
+
+        <h2>Recent Activity</h2>
+
+        <p>✔ Student registered successfully.</p>
+
+        <p>✔ Results uploaded.</p>
+
+        <p>✔ GPA calculated.</p>
+
+    </div>
+
+</div>
+
+<script src="admin-dashboard.js"></script>
+
+</body>
+</html>

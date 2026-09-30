@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="student-dashboard.css">
+</head>
+
+<body>
+
+    <nav class="dashboard-nav">
+
+        <div class="logo">
+            <h2>Result Portal</h2>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">Dashboard</a>
+            <a href="#" id="profileBtn"> Profile</a>
+            <a href="login-choice.html">Logout</a>
+        </div>
+
+    </nav>
+
+
+    <div class="dashboard-container">
+
+        <h1>Welcome, <span id="welcomeName">Student</span> 👋</h1>
+        <p class="subtitle">Here is your academic overview</p>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Full Name</h3>
+                <p id="studentName">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Department</h3>
+                <p id="studentDepartment">Loading....</p>
+            </div>
+
+            <div class="card">
+                <h3>Level</h3>
+                <p id="studentLevel">Loading....</p>
+            </div>
+
+            <div class="card cgpa-card">
+
+    <h3>CGPA Progress</h3>
+
+    <h2 id="cgpaValue">3.75</h2>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="cgpaBar"></div>
+    </div>
+
+    <p id="cgpaClass">Second Class Upper</p>
+
+</div>
+
+        </div>
+
+
+        <div class="result-section">
+
+    <h2>Academic Results</h2>
+
+    <div class="result-controls">
+
+        <label for="levelSelect">Level:</label>
+
+        <select id="levelSelect">
+            <option value="100">100 Level</option>
+            <option value="200">200 Level</option>
+            <option value="300">300 Level</option>
+            <option value="400">400 Level</option>
+        </select>
+
+
+        <label for="semesterSelect">Semester:</label>
+
+        <select id="semesterSelect">
+            <option value="first">First Semester</option>
+            <option value="second">Second Semester</option>
+        </select>
+
+    </div>
+
+
+    <table id="resultsTable">
+
+        <thead>
+            <tr>
+                <th>Course Code</th>
+                <th>Course Title</th>
+                <th>Unit</th>
+                <th>Score</th>
+                <th>Grade</th>
+                <th>Grade Point</th>
+            </tr>
+        </thead>
+
+        <tbody id="resultsBody">
+            <!-- Results will appear here -->
+        </tbody>
+
+    </table>
+
+</div>
+
+
+        <div class="notification">
+
+            <h2>Notifications</h2>
+
+            <p>📢 Your semester results have been released.</p>
+
+        </div>
+
+
+    </div>
+
+<!-- Profile Modal -->
+
+<div id="profilePanel" class="profile-panel">
+    <span class="close-btn" id="closeProfile">&times;</span>
+
+    <h2>Student Profile</h2>
+
+    <p><strong>Name:</strong> <span id="profileName"></span></p>
+    <p><strong>School:</strong> <span id="profileSchool"></span></p>
+    <p><strong>Matric No:</strong> <span id="profileMatric"></span></p>
+    <p><strong>Department:</strong> <span id="profileDepartment"></span></p>
+    <p><strong>Level:</strong> <span id="profileLevel"></span></p>
+    <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+</div>
+
+<script src="student-dashboard.js"></script>
+
+</body>
+</html>

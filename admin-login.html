@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administrator Login</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        <h2>Result Portal</h2>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="learn.html">About</a></li>
+        <li><a href="login-choice.html">Login</a></li>
+    </ul>
+</nav>
+
+
+<div class="login">
+
+    <div class="admin-icon">
+        <i class="fas fa-user-shield"></i>
+    </div>
+
+    <h1>Administrator Login</h1>
+
+    <p>Authorized personnel only.</p>
+
+    <form id="adminLoginForm">
+
+        <input
+            type="email"
+            id="adminLoginEmail"
+            placeholder="Email Address"
+            required
+        >
+
+        <input
+            type="text"
+            id="adminLoginStaffId"
+            placeholder="Staff ID"
+            required
+        >
+
+        <input
+            type="password"
+            id="adminLoginPassword"
+            placeholder="Password"
+            required
+        >
+
+        <input
+            type="password"
+            id="adminLoginCode"
+            placeholder="Administrator Access Code"
+            required
+        >
+
+        <button type="submit">
+            Login as Administrator
+        </button>
+
+        <p>
+            <a href="forgot-password.html">Forgot Password?</a>
+        </p>
+
+    </form>
+
+    <p>
+        Don't have an administrator account?
+        <a href="admin-signup.html">Create Account</a>
+    </p>
+
+    <p>
+        <a href="login-choice.html">← Choose another login type</a>
+    </p>
+
+</div>
+
+
+<script src="admin-login.js"></script>
+
+</body>
+</html>
